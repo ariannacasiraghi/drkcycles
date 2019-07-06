@@ -1,0 +1,1043 @@
+/*--
+	common css
+--*/
+body {
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased; 
+  text-align: justify;
+  background-color: #FFFBFC;
+}
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: #FFFBFC;
+}
+h2 {
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  color: #FFFBFC;
+}
+h3,p {
+  font-family: 'Nunito', sans-serif;
+  text-align: justify;
+  color: #101511;
+}
+
+a, a:active, a:focus, a:active {
+  text-decoration: none !important;
+  color: #ffd23f;
+}
+a.special:hover {
+  color: #ffbf3f;
+}
+li.special {
+  list-style-type: none;
+  margin-left: -37px;
+  padding-top: 10px;
+}
+hr.hr-footer {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #101511;
+  margin: 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width:60%;
+}
+
+
+
+/*---------------------------------------------
+          header
+-----------------------------------------------*/
+/* The next bit of code is to change the breakpoint of the navbar to collapse
+(by default 768 px) */
+@media (max-width: 800px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+/*-----------------------------------------------*/
+@media only screen and (max-width: 768px) {
+header {
+  padding-top: 49px;
+}
+header .navbar {
+  padding-left: 20px;
+  padding-right: 40px; 
+  background-color: #101511;
+}
+header .navbar-brand {
+  margin-top: -1px;
+  margin-bottom:2px;
+}
+header .navbar-inverse {
+  border: 0px;
+  padding-left: 29px;
+  padding-top: 2px;
+}
+header .navbar-inverse .navbar-nav {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+header .navbar-inverse .navbar-nav li a {
+  color: #FFFBFC;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+}
+header .navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #ffd23f;
+  background-color: #101511;
+}
+header .navbar-inverse .navbar-nav > li > a:hover {
+  color: #ffd23f;
+}}
+/*-----------------------------------------------*/
+@media only screen and (min-width: 768px) {
+header {
+  padding-top: 49px;
+}
+header .navbar {
+  padding-left: 20px;
+  padding-right: 40px; 
+  background-color: #101511;
+}
+header .navbar-brand {
+  margin-top: 0px; 
+}
+header .navbar-inverse {
+  border: 0px;
+  padding-left: 29px;
+}
+header .navbar-inverse .navbar-nav {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+header .navbar-inverse .navbar-nav li a {
+  color: #FFFBFC;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+}
+header .navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #ffd23f;
+  background-color: #101511;
+}
+header .navbar-inverse .navbar-nav > li > a:hover {
+  color: #ffd23f;
+}}
+/*-----------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+header {
+  padding-top: 49px;
+}
+header .navbar {
+  padding-left: 20px;
+  padding-right: 40px; 
+  background-color: #101511;
+}
+header .navbar-brand {
+  margin-top: -1px; 
+}
+header .navbar-inverse {
+  border: 0px;
+  padding-left: 29px;
+}
+header .navbar-inverse .navbar-nav {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+header .navbar-inverse .navbar-nav li a {
+  color: #FFFBFC;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+}
+header .navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover{
+  color: #ffd23f;
+  background-color: #101511;
+}
+header .navbar-inverse .navbar-nav > li > a:hover {
+  color: #ffd23f;
+}}
+/*-----------------------------------------------*/
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffd23f;
+  color: #101511;
+}
+#bs-example-navbar-collapse-1 .active {
+  color: #ffd23f
+}
+
+
+
+
+
+/*---------------------------------------------
+					home start
+-----------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#home{
+  background: url("../img/home-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 80px 0 0px 0;
+  height: 480px;
+  position: relative;
+  color: #FFFBFC;
+}}
+@media only screen and (min-width: 400px) {
+#home {
+  background: url("../img/home-small.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 130px 0 200px 0;
+  position: relative;
+  color: #FFFBFC;
+}}
+@media only screen and (min-width: 992px) {
+#home{
+  background: url("../img/home-medium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 150px 0 220px 0;
+  position: relative;
+  color: #FFFBFC;
+}}
+@media only screen and (min-width: 1200px) {
+#home{
+  background: url("../img/home-medium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 170px 0 360px 0;
+  position: relative;
+  color: #FFFBFC;
+}}
+/*---------------------------------------------*/
+#home:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to left, #444c44, #192319);
+  opacity: 0.5;
+}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#home .block h1 {
+  font-size: 45px;
+  line-height: 41px;
+  padding-bottom: 40px;
+}}
+@media only screen and (min-width: 400px) {
+#home .block h1 {
+  font-size: 60px;
+  line-height: 50px;
+  padding-bottom: 50px;
+}}
+@media only screen and (min-width: 992px) {
+#home .block h1 {
+  font-size: 75px;
+  line-height: 60px;
+  padding-bottom: 50px;
+}}
+@media only screen and (min-width: 1200px) {
+#home .block h1 {
+  font-size: 90px;
+  line-height: 70px;
+  padding-bottom: 50px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#home .block h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}}
+@media only screen and (min-width: 400px) {
+#home .block h2 {
+  font-size: 19px;
+  letter-spacing: 1.1px;
+  line-height: 30px;
+}}
+@media only screen and (min-width: 992px) {
+#home .block h2 {
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  line-height: 35px;
+}}
+@media only screen and (min-width: 1200px) {
+#home .block h2 {
+  font-size: 25px;
+  letter-spacing: 1.2px;
+  line-height: 40px;
+}}
+
+
+
+
+
+/*---------------------------------------------
+          about start
+-----------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#about {
+  background-color: #FFFBFC;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 400px) {
+#about {
+  background-color: #FFFBFC;
+  background-size: cover;
+  padding: 40px 0 50px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 992px) {
+#about {
+  background-color: #FFFBFC;
+  background-size: cover;
+  padding: 60px 0 80px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 1200px) {
+#about {
+  background-color: #FFFBFC;
+  background-size: cover;
+  padding: 80px 0 100px 0;
+  position: relative;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#about h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 12px;
+}}
+@media only screen and (min-width: 400px) {
+#about h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 15px;
+}}
+@media only screen and (min-width: 992px) {
+#about h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 20px;
+}}
+@media only screen and (min-width: 1200px) {
+#about h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 25px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#about .block p {
+  font-size: 16px;
+  line-height: 20px;
+}}
+@media only screen and (min-width: 400px) {
+#about .block p {
+  font-size: 17px;
+  line-height: 23px;
+}}
+@media only screen and (min-width: 992px) {
+#about .block p {
+  font-size: 18px;
+  line-height: 27px;
+}}
+@media only screen and (min-width: 1200px) {
+#about .block p {
+  font-size: 19px;
+  line-height: 30px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#about .block img {
+  margin-top: -30px;
+  width:100%;
+  padding: 10%;
+  margin-bottom: -50px;
+}}
+@media only screen and (min-width: 400px) {
+#about .block img {
+  margin-top: -70px;
+  width:100%;
+  padding: 20%;
+  margin-bottom: -80px;
+}}
+@media only screen and (min-width: 992px) {
+#about .block img {
+  margin-top: 5px;
+  width:100%;
+  padding: 5%;
+}}
+@media only screen and (min-width: 1200px) {
+#about .block img {
+  margin-top: 5px;
+  padding: 0%;
+  width:100%;
+}}
+
+
+
+
+
+/*---------------------------------------------
+          bicycles start
+-----------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#bicycles {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 400px) {
+#bicycles {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 40px 0 50px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 992px) {
+#bicycles {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 60px 0 80px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 1200px) {
+#bicycles {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 80px 0 100px 0;
+  position: relative;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#bicycles .block h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 12px;
+}}
+@media only screen and (min-width: 400px) {
+#bicycles .block h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 15px;
+}}
+@media only screen and (min-width: 992px) {
+#bicycles .block h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 20px;
+}}
+@media only screen and (min-width: 1200px) {
+#bicycles .block h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 25px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#bicycles .block h2 {
+  font-size: 20px;
+  color: #ffd23f;
+  padding-bottom: 12px;
+  text-align: left;
+}}
+@media only screen and (min-width: 400px) {
+#bicycles .block h2 {
+  font-size: 25px;
+  color: #ffd23f;
+  padding-bottom: 15px;
+  text-align: left;
+}}
+@media only screen and (min-width: 992px) {
+#bicycles .block h2 {
+  font-size: 30px;
+  color: #ffd23f;
+  padding-bottom: 20px;
+  text-align: left;
+}}
+@media only screen and (min-width: 1200px) {
+#bicycles .block h2 {
+  font-size: 35px;
+  color: #ffd23f;
+  padding-bottom: 25px;
+  text-align: left;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#bicycles .block h3 {
+  font-size: 16px;
+  color: #FFFBFC;
+  padding-bottom: 12px;
+  line-height: 20px;
+
+}}
+@media only screen and (min-width: 400px) {
+#bicycles .block h3 {
+  font-size: 17px;
+  color: #FFFBFC;
+  padding-bottom: 15px;
+  line-height: 23px;
+
+}}
+@media only screen and (min-width: 992px) {
+#bicycles .block h3 {
+  font-size: 18px;
+  color: #FFFBFC;
+  padding-bottom: 20px;
+  line-height: 27px;
+
+}}
+@media only screen and (min-width: 1200px) {
+#bicycles .block h3 {
+  font-size: 19px;
+  color: #FFFBFC;
+  padding-bottom: 25px;
+  line-height: 30px;
+
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#bicycles .block p {
+  color: #fffbfc;
+  font-size: 16px;
+  line-height: 20px;
+}}
+@media only screen and (min-width: 400px) {
+#bicycles .block p {
+  color: #fffbfc;
+  font-size: 17px;
+  line-height: 23px;
+}}
+@media only screen and (min-width: 992px) {
+#bicycles .block p {
+  color: #fffbfc;
+  font-size: 18px;
+  line-height: 27px;
+}}
+@media only screen and (min-width: 1200px) {
+#bicycles .block p {
+  color: #fffbfc;
+  font-size: 19px;
+  line-height: 30px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#bicycles .img-responsive {
+  margin-bottom: 17px;
+}}
+@media only screen and (min-width: 400px) {
+#bicycles .img-responsive {
+  margin-bottom: 20px;
+  }}
+@media only screen and (min-width: 992px) {
+#bicycles .img-responsive {
+  margin-bottom: 25px;
+}}
+@media only screen and (min-width: 1200px) {
+#bicycles .img-responsive {
+  margin-bottom: 30px;
+}}
+
+
+
+
+
+/*---------------------------------------------
+          ordering start
+-----------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#ordering {
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 400px) {
+#ordering {
+  background-size: cover;
+  padding: 40px 0 50px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 992px) {
+#ordering {
+  background-size: cover;
+  padding: 60px 0 80px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 1200px) {
+#ordering {
+  background-size: cover;
+  padding: 80px 0 100px 0;
+  position: relative;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#ordering .block h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 12px;
+}}
+@media only screen and (min-width: 400px) {
+#ordering .block h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 15px;
+}}
+@media only screen and (min-width: 992px) {
+#ordering .block h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 20px;
+}}
+@media only screen and (min-width: 1200px) {
+#ordering .block h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 25px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#ordering .block p {
+  font-size: 16px;
+  line-height: 20px;
+}}
+@media only screen and (min-width: 400px) {
+#ordering .block p {
+  font-size: 17px;
+  line-height: 23px;
+}}
+@media only screen and (min-width: 992px) {
+#ordering .block p {
+  font-size: 18px;
+  line-height: 27px;
+}}
+@media only screen and (min-width: 1200px) {
+#ordering .block p {
+  font-size: 19px;
+  line-height: 30px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#ordering .img-responsive {
+  margin-bottom: 17px;
+}}
+@media only screen and (min-width: 400px) {
+#ordering .img-responsive {
+  margin-bottom: 20px;
+  }}
+@media only screen and (min-width: 992px) {
+#ordering .img-responsive {
+  margin-bottom: 25px;
+}}
+@media only screen and (min-width: 1200px) {
+#ordering .img-responsive {
+  margin-bottom: 30px;
+}}
+
+
+
+
+
+/*---------------------------------------------
+          contact start
+-----------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#contact {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 400px) {
+#contact {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 40px 0 50px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 992px) {
+#contact {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 60px 0 80px 0;
+  position: relative;
+}}
+@media only screen and (min-width: 1200px) {
+#contact {
+  background-color: #1E1E1E;
+  background-size: cover;
+  padding: 80px 0 100px 0;
+  position: relative;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#contact .block h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 12px;
+}}
+@media only screen and (min-width: 400px) {
+#contact .block h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 15px;
+}}
+@media only screen and (min-width: 992px) {
+#contact .block h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 20px;
+}}
+@media only screen and (min-width: 1200px) {
+#contact .block h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ffd23f;
+  padding-bottom: 25px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#contact-form {
+  padding-top: 50px;
+}}
+@media only screen and (min-width: 400px) {
+#contact-form {
+  padding-top: 60px;
+}}
+@media only screen and (min-width: 992px) {
+#contact-form {
+  padding-top: 70px;
+}}
+@media only screen and (min-width: 1200px) {
+#contact-form {
+  padding-top: 80px;
+}}
+/*---------------------------------------------*/
+#contact-form form .block .form-group {
+  padding-bottom: 15px;
+}
+#contact-form form .block  .form-group .form-control {
+  background-color: #FFFBFC;
+  height: 60px;
+  border: 1px solid #ededed;
+  box-shadow: none;
+}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#contact-form form .block .form-group input {
+  font-size: 18px;
+}}
+@media only screen and (min-width: 400px) {
+#contact-form form .block .form-group input {
+  font-size: 19px;
+}}
+@media only screen and (min-width: 992px) {
+#contact-form form .block .form-group input {
+  font-size: 20px;
+}}
+@media only screen and (min-width: 1200px) {
+#contact-form form .block .form-group input {
+  font-size: 20px;
+}}
+/*---------------------------------------------*/
+#contact-form form .block .form-group-2 {
+  padding-bottom: 15px;
+}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#contact-form form .block .form-group-2 textarea {
+  font-size: 18px;
+  background-color: #FFFBFC;
+  height: 164px;
+  border: 1px solid #ededed;
+  box-shadow: none;
+}}
+@media only screen and (min-width: 400px) {
+#contact-form form .block .form-group-2 textarea {
+  font-size: 19px;
+  background-color: #FFFBFC;
+  height: 164px;
+  border: 1px solid #ededed;
+  box-shadow: none;
+}}
+@media only screen and (min-width: 992px) {
+#contact-form form .block .form-group-2 textarea {
+  font-size: 20px;
+  background-color: #FFFBFC;
+  height: 164px;
+  border: 1px solid #ededed;
+  box-shadow: none;
+}}
+@media only screen and (min-width: 1200px) {
+#contact-form form .block .form-group-2 textarea {
+  font-size: 20px;
+  background-color: #FFFBFC;
+  height: 164px;
+  border: 1px solid #ededed;
+  box-shadow: none;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#contact-form .block button {
+  width: 100%;
+  height: 60px;
+  background: #FFD23F;
+  border: none;
+  color: #FFFBFC;
+  font-size: 18px;
+  font-weight: 700;
+}}
+@media only screen and (min-width: 400px) {
+#contact-form .block button {
+  width: 100%;
+  height: 60px;
+  background: #FFD23F;
+  border: none;
+  color: #FFFBFC;
+  font-size: 19px;
+  font-weight: 700;
+}}
+@media only screen and (min-width: 992px) {
+#contact-form .block button {
+  width: 100%;
+  height: 60px;
+  background: #FFD23F;
+  border: none;
+  color: #FFFBFC;
+  font-size: 20px;
+  font-weight: 700;
+
+}}
+@media only screen and (min-width: 1200px) {
+#contact-form .block button {
+  width: 100%;
+  height: 60px;
+  background: #FFD23F;
+  border: none;
+  color: #FFFBFC;
+  font-size: 20px;
+  font-weight: 700;
+}}
+/*---------------------------------------------*/
+#contact-form .block button:hover {
+  color: #101511;
+}
+
+
+
+
+
+/*---------------------------------------------
+          thank-you start 
+-----------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#thank-you{
+  background: url("../img/home-small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 80px 0 0px 0;
+  height: 480px;
+  position: relative;
+  color: #FFFBFC;
+  margin-top: -48px;
+}}
+@media only screen and (min-width: 400px) {
+#thank-you {
+  background: url("../img/home-small.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 130px 0 200px 0;
+  position: relative;
+  color: #FFFBFC;
+  margin-top: -47px;
+}}
+@media only screen and (min-width: 992px) {
+#thank-you{
+  background: url("../img/home-medium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 150px 0 220px 0;
+  position: relative;
+  color: #FFFBFC;
+  margin-top: -44px;
+}}
+@media only screen and (min-width: 1200px) {
+#thank-you{
+  background: url("../img/home-medium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 170px 0 360px 0;
+  position: relative;
+  color: #FFFBFC;
+  margin-top: -40px;
+}}
+/*---------------------------------------------*/
+#thank-you:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to left, #444c44, #192319);
+  opacity: 0.5;
+}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#thank-you .block h1 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 52px;
+  padding-bottom: 40px;
+}}
+@media only screen and (min-width: 400px) {
+#thank-you .block h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 65px;
+  padding-bottom: 50px;
+}}
+@media only screen and (min-width: 992px) {
+#thank-you .block h1 {
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 80px;
+  padding-bottom: 50px;
+}}
+@media only screen and (min-width: 1200px) {
+#thank-you .block h1 {
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 90px;
+  padding-bottom: 50px;
+}}
+/*---------------------------------------------*/
+@media only screen and (max-width: 400px) {
+#thank-you .block h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}}
+@media only screen and (min-width: 400px) {
+#thank-you .block h2 {
+  font-size: 19px;
+  letter-spacing: 1.1px;
+  line-height: 30px;
+}}
+@media only screen and (min-width: 992px) {
+#thank-you .block h2 {
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  line-height: 35px;
+}}
+@media only screen and (min-width: 1200px) {
+#thank-you .block h2 {
+  font-size: 25px;
+  letter-spacing: 1.2px;
+  line-height: 40px;
+}}
+
+
+
+
+
+/*---------------------------------------------
+          footer start 
+-----------------------------------------------*/
+@media only screen and (max-width: 768px) {
+footer {
+  background: #FFFBFC;
+  text-align: center;
+  padding: 50px 0 10px 0;
+}
+footer p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #101511;
+  text-align: center;
+}}
+/*---------------------------------------------*/
+@media only screen and (min-width: 768px) {
+footer {
+  background: #FFFBFC;
+  text-align: center;
+  padding: 80px 0 10px 0;
+}
+footer p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #101511;
+  text-align: center;
+}}
