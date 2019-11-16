@@ -81,3 +81,5 @@
   };
 
 })( jQuery );
+
+$('.carousel').carousel()
